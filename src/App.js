@@ -4,8 +4,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p><a href="https://github.com/Vivica-R/react-weather-app">Open-source code</a> by <a href="https://www.linkedin.com/in/vivica-ramdawon">Vivica Ramdawon</a></p> 
       </header>
+
+      <footer>This project was coded by <a href="https://www.linkedin.com/in/vivica-ramdawon" target="_blank">Vivica Ramdawon</a> and is <a href="https://github.com/Vivica-R/react-weather-app" target="_blank">open-sourced on GitHub</a></footer>
     </div>
   );
 }
