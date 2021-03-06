@@ -2,12 +2,6 @@
     text-transform: capitalize;
   }
   
-  .WeatherNow #today {
-    position: relative;
-    top: -10px;
-    font-size: 18px;
-    margin: 0;
-  }
   
   .WeatherNow #now {
     margin: 10px;
@@ -67,6 +61,3 @@
     text-transform: uppercase;
   }
 
-  .WeatherNow #day {
-    text-transform: uppercase;
-  }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./WeatherNow.css";
 import axios from "axios";
+import FormattedDate from "./FormattedDate"
 
 export default function WeatherNow(props) {
   const [weatherData, setWeatherData] = useState({ready: false});
@@ -15,6 +16,7 @@ export default function WeatherNow(props) {
       description: response.data.weather[0].description,
       iconUrl: response.data.weather[0].icon,
       day: "Saturday",
+      date: new Date(response.data.dt *1000),
     });
   }
 
@@ -22,9 +24,7 @@ export default function WeatherNow(props) {
     return (
       <div className="WeatherNow">
         <h1>{weatherData.city}</h1>
-        <p id="today">
-          <span id="day">{weatherData.day}</span>, <span id="time">14:00</span>
-        </p>
+        <FormattedDate date={weatherData.date}/>
         <div className="row" id="now">
           <div className="col-1"></div>
           <div className="col-4">

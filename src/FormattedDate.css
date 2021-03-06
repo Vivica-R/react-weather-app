@@ -1,0 +1,6 @@
+.FormattedDate .today {
+    position: relative;
+    top: -10px;
+    font-size: 18px;
+    margin: 0;
+  }
