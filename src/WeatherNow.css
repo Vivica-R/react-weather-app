@@ -1,63 +1,15 @@
-.WeatherNow h1 {
-    text-transform: capitalize;
-  }
-  
-  
-  .WeatherNow #now {
-    margin: 10px;
-  }
-  
-  .WeatherNow #weather-icon {
-    width: 200px;
-  }
-  
-  .WeatherNow #temperature-field {
-    margin-bottom: 0px;
-  }
-  
-  .WeatherNow #temperature {
-    font-size: 110px;
-    position: relative;
-    top: 18px;
-    left: 15px;
-  }
-  
-  .WeatherNow #units {
-    font-size: 20px;
-    font-weight: 600;
-    position: relative;
-    top: 22px;
-    right: 40px;
-  }
-  
-  .WeatherNow #units .active {
-    color: #fff;
-    cursor: default;
-  }
-  
-  .WeatherNow #units .active:hover {
-    color: #fff;
-    cursor: default;
-  }
-  
-  .WeatherNow #units a {
-    color: #ffc107;
-    text-decoration: none;
-    transition: all 150ms ease-in-out;
-  }
-  
-  .WeatherNow #units a:hover {
-    color: #7b1fa2;
-    cursor: pointer;
-  }
+.Search form {
+  margin-bottom: 25px;
+}
 
-  .WeatherNow .details {
-    font-size: 14px;
-    text-align: center;
-    padding: 20px 20px 70px 25px;
-  }
-  
-  .WeatherNow .description:first-letter {
-    text-transform: uppercase;
-  }
+.Search .btn {
+  background-color: #7b1fa2;
+  border: 1px solid #fff;
+  transition: all 150ms ease-in-out;
+}
 
+.Search .btn:hover {
+  background-color: #ffc107;
+  border-color: #fff;
+  cursor: pointer;
+}

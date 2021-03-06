@@ -1,25 +1,56 @@
 import React from "react";
 import "./WeatherDetails.css";
+import FormattedDate from "./FormattedDate";
 
-export default function WeatherDetails() {
-  return (
+
+export default function WeatherDetails(props) {
+  return(
     <div className="WeatherDetails">
-      <div className="details">
+         <h1>{props.data.city}</h1>
+        <FormattedDate date={props.data.date}/>
+        <div className="row" id="now">
+          <div className="col-1"></div>
+          <div className="col-4">
+            <img src={props.data.iconUrl} alt={props.data.description} id="weather-icon" className="center-block" />
+          </div>
+          <div className="col-4">
+            <p className="text-center" id="temperature-field">
+              <span id="temperature">{props.data.temperature}</span>
+            </p>
+          </div>
+          <div className="col-2">
+            <p className="text-center" id="units">
+              <span>
+                <a href="#" id="celsius-link" className="active">
+                  °C&nbsp;
+                </a>
+              </span>
+               |&nbsp; 
+              <span>
+                <a href="#" id="fahrenheit-link">
+                  °F
+                </a>
+              </span>
+            </p>
+          </div>
+          <div className="col-1"></div>
+        </div>
+        <div className="details">
         <div className="row">
           <div className="col-4">DESCRIPTION</div>
           <div className="col-4">HUMIDITY</div>
           <div className="col-4">WIND</div>
         </div>
         <div className="row">
-          <div className="col-4 description"></div>
+          <div className="col-4 description">{props.data.description}</div>
           <div className="col-4">
-            <span></span> %
+            <span>{props.data.humidity}</span> %
           </div>
           <div className="col-4">
-            <span></span> km/h
+            <span>{props.data.wind}</span> km/h
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }

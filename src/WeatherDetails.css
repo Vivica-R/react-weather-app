@@ -1,9 +1,62 @@
+.WeatherDetails h1 {
+  text-transform: capitalize;
+}
+
+
+.WeatherDetails #now {
+  margin: 10px;
+}
+
+.WeatherDetails #weather-icon {
+  width: 200px;
+}
+
+.WeatherDetails #temperature-field {
+  margin-bottom: 0px;
+}
+
+.WeatherDetails #temperature {
+  font-size: 110px;
+  position: relative;
+  top: 18px;
+  left: 15px;
+}
+
+.WeatherDetails #units {
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  top: 22px;
+  right: 40px;
+}
+
+.WeatherDetails #units .active {
+  color: #fff;
+  cursor: default;
+}
+
+.WeatherDetails #units .active:hover {
+  color: #fff;
+  cursor: default;
+}
+
+.WeatherDetails #units a {
+  color: #ffc107;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.WeatherDetails #units a:hover {
+  color: #7b1fa2;
+  cursor: pointer;
+}
+
 .WeatherDetails .details {
-    font-size: 14px;
-    text-align: center;
-    padding: 20px 20px 70px 25px;
-  }
-  
-  .WeatherDetails .description:first-letter {
-    text-transform: uppercase;
-  }
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 20px 70px 25px;
+}
+
+.WeatherDetails .description:first-letter {
+  text-transform: uppercase;
+}
