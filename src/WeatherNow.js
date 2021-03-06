@@ -17,7 +17,7 @@ export default function WeatherNow(props) {
       wind: Math.round(response.data.wind.speed),
       city: response.data.name,
       description: response.data.weather[0].description,
-      iconUrl: response.data.weather[0].icon,
+      iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@4x.png`,
       day: "Saturday",
       date: new Date(response.data.dt *1000),
     });
