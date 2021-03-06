@@ -1,0 +1,16 @@
+.Search form {
+    margin-bottom: 25px;
+  }
+  
+  .Search .btn {
+    background-color: #7b1fa2;
+    border: 1px solid #fff;
+    transition: all 150ms ease-in-out;
+  }
+  
+  .Search .btn:hover {
+    background-color: #ffc107;
+    border-color: #fff;
+    cursor: pointer;
+  }
+  
