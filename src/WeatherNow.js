@@ -3,6 +3,8 @@ import "./WeatherNow.css";
 import "./WeatherDetails.css";
 import axios from "axios";
 import WeatherDetails from "./WeatherDetails";
+import Forecast from "./Forecast";
+
 
 
 export default function WeatherNow(props) {
@@ -67,6 +69,7 @@ export default function WeatherNow(props) {
       </form>
     </div>
         <WeatherDetails data={weatherData}/>
+        <Forecast city={weatherData.city}/>
       </div>
     );
   } else {
