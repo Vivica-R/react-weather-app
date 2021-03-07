@@ -6,13 +6,15 @@
 .WeatherDetails #now {
   margin: 10px;
   position: relative;
-  top: 10px;
-  left: 17px;
+  top: 20px;
+  height: 180px;
+
 }
 
 .WeatherDetails canvas {
   position: relative;
-  top: 18px;
+  top: 10px;
+  left: 5px;
 }
 
 .WeatherDetails #temperature-field {
@@ -21,17 +23,15 @@
 
 .WeatherDetails #temperature {
   font-size: 110px;
-  position: relative;
-  top: 18px;
-  left: 15px;
+  text-align: right;
 }
 
 .WeatherDetails #units {
   font-size: 20px;
   font-weight: 500;
   position: relative;
-  top: 22px;
-  right: 40px;
+  top: -165px;
+  left: 55px;
 }
 
 .WeatherDetails #units .active {
@@ -58,7 +58,7 @@
 .WeatherDetails .details {
   font-size: 14px;
   text-align: center;
-  padding: 32px 20px 70px 25px;
+  padding: 0px 20px 70px 20px;
 }
 
 .WeatherDetails .description:first-letter {
